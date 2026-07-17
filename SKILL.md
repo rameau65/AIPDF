@@ -1,6 +1,6 @@
 ---
 name: aipdf
- title: AI Character IP Development Framework
+title: AI Character IP Development Framework
 version: 1.1.0
 language: ko-KR
 domain: character-ip
