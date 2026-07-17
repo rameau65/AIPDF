@@ -1,0 +1,24 @@
+{
+  "name": "ip-character-development",
+  "version": "1.0.0",
+  "specialization": "SINDAENG",
+  "language": "ko-KR",
+  "files": [
+    "README.md",
+    "SKILL.md",
+    "references/character-bible.md",
+    "references/emotion-bloom.md",
+    "references/ip-profile.md",
+    "references/licensing-investment.md",
+    "references/product-system.md",
+    "references/visual-language.md",
+    "references/worldbuilding.md",
+    "templates/deliverable-manifest.md",
+    "templates/prompt-library.md",
+    "templates/quality-checklist.md",
+    "workflows/stage-1-character-identity.md",
+    "workflows/stage-2-visual-asset-library.md",
+    "workflows/stage-3-product-visualization.md",
+    "workflows/stage-4-final-publishing.md"
+  ]
+}
