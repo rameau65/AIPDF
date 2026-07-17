@@ -1,0 +1,36 @@
+name: Validate framework
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements-docs.txt
+
+      - name: Validate required files
+        shell: bash
+        run: |
+          required=(README.md README_KR.md SKILL.md mkdocs.yml requirements-docs.txt docs/index.md docs/en/index.md docs/ko/index.md)
+          for file in "${required[@]}"; do
+            test -f "$file" || { echo "Missing required file: $file"; exit 1; }
+          done
+
+      - name: Strict MkDocs build
+        run: mkdocs build --strict
