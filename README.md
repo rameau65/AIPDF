@@ -1,34 +1,60 @@
-# IP Character Development Skill Pack
+# AI Character IP Development Framework (AIPDF)
 
-SINDAENG 프로젝트를 기준으로 설계된 캐릭터 IP 개발 전 과정용 스킬 패키지다.
+AIPDF is an end-to-end framework for building character intellectual property with AI—from character identity and worldbuilding to brand systems, product visualization, licensing, investment, and publishing.
 
-## 설치 구조
+[한국어 README](README_KR.md) · [Documentation](docs/en/index.md) · [한국어 문서](docs/ko/index.md)
 
-```text
-ip_character_development_skill/
-├── SKILL.md
-├── README.md
-├── references/
-├── workflows/
-└── templates/
+## Phase 1 — Framework Core
+
+- GitHub repository architecture
+- MkDocs Material documentation site
+- Korean and English documentation
+- Core `SKILL.md`
+- Character, brand, worldbuilding, product, licensing, and publishing guides
+- GitHub Actions validation and GitHub Pages deployment
+
+## Framework Layers
+
+1. **Character Core** — Character DNA, silhouette, face consistency, pose and expression systems
+2. **World & Emotion** — Emotion Bloom™, worldbuilding, relationships, story loops
+3. **Brand System** — Visual language, color, typography, diagram and content systems
+4. **Product System** — Art toys, packaging, merchandise, retail and exhibition
+5. **Business System** — Licensing, commercialization, investment and revenue architecture
+6. **Publishing System** — PPTX, PDF, DOCX and documentation delivery
+
+## Quick Start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -r requirements-docs.txt
+mkdocs serve
 ```
 
-## 사용 순서
+Open `http://127.0.0.1:8000`.
 
-1. `references/ip-profile.md`에서 프로젝트 정보를 수정한다.
-2. `SKILL.md`를 작업 지침으로 사용한다.
-3. 현재 단계에 맞는 `workflows/` 문서를 적용한다.
-4. `templates/prompt-library.md`의 프롬프트를 이미지·슬라이드 제작에 사용한다.
-5. 완료 후 `templates/quality-checklist.md`와 `deliverable-manifest.md`로 검수한다.
+## Repository Structure
 
-## 확장 권장 파일
+```text
+AIPDF/
+├── .github/workflows/
+├── docs/
+│   ├── en/
+│   └── ko/
+├── references/
+├── templates/
+├── workflows/
+├── mkdocs.yml
+├── requirements-docs.txt
+├── README.md
+├── README_KR.md
+└── SKILL.md
+```
 
-프로젝트가 커질 경우 아래 문서를 추가한다.
+## Reference IP
 
-- naming-system.md
-- legal-rights-guide.md
-- animation-style-guide.md
-- game-design-bible.md
-- retail-space-guide.md
-- localization-guide.md
-- social-content-calendar.md
+SINDAENG is the initial reference implementation. The framework itself is reusable for other character IPs by replacing the project profile and maintaining the same quality gates.
+
+## Rights and License
+
+Framework documentation and configuration are released under the repository license. Character artwork, trademarks, and SINDAENG-specific assets remain subject to the rights holder’s terms unless explicitly licensed otherwise.
