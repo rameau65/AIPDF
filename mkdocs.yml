@@ -1,0 +1,62 @@
+site_name: AI Character IP Development Framework
+site_description: End-to-end AI framework for character IP development
+site_url: https://rameau65.github.io/AIPDF/
+repo_url: https://github.com/rameau65/AIPDF
+repo_name: rameau65/AIPDF
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+  - English:
+      - Overview: en/index.md
+      - Framework Core: en/framework-core.md
+      - Workflow: en/workflow.md
+      - Quality System: en/quality-system.md
+  - 한국어:
+      - 개요: ko/index.md
+      - 프레임워크 코어: ko/framework-core.md
+      - 워크플로: ko/workflow.md
+      - 품질 시스템: ko/quality-system.md
+  - Reference:
+      - SINDAENG Profile: reference/sindaeng.md
+      - Repository Structure: reference/repository-structure.md
+
+copyright: Copyright © AIPDF contributors
